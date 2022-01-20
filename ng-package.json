@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "lib": {
+    "entryFile": "./src/lib/public_api.ts"
+  },
+  "assets": [
+    "tailwind.classwhitelist"
+  ],
+  "allowedNonPeerDependencies": [
+    "@angular/animations",
+    "@angular/common",
+    "@angular/compiler",
+    "@angular/core",
+    "@angular/forms",
+    "@angular/platform-browser",
+    "@angular/router",
+    "@nunt/core",
+    "@nunt/design",
+    "@ngx-translate/core",
+    "@ngx-translate/http-loader",
+    "ng-packagr",
+    "rxjs",
+    "zone.js"
+  ]
+}

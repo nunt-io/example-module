@@ -5,12 +5,14 @@
     "ng": "ng",
     "serve": "ng serve --live-reload",
     "start": "concurrently --kill-others \"npm run tailwind\" \"npm run serve\"",
-    "start:prod": "tailwindcss build -i ./src/styles.scss -o ./src/styles.css -c config/tailwind.config.js && ng serve --disableHostCheck --prod",
-    "build": "tailwindcss build -i ./src/styles.scss -o ./src/styles.css -c config/tailwind.config.js && ng build --prod --aot",
+    "start:prod": "tailwindcss build -i ./src/styles.scss -o ./src/styles.css -c tailwind.config.js && ng serve --disableHostCheck --prod",
+    "build": "tailwindcss build -i ./src/styles.scss -o ./src/styles.css -c tailwind.config.js && ng build --prod --aot",
     "build:lib": "ng-packagr -p ng-package.json && cd dist && npm publish --registry https://nunt.io/registry",
     "tailwind": "tailwindcss build -i ./src/styles.scss -o ./src/styles.css -c tailwind.config.js --watch",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": false,
   "dependencies": {
